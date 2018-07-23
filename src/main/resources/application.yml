@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: rabbitmq-demo
+
+  rabbitmq:
+    # rabbitmq 连接地址
+    host: 127.0.0.1
+    # 端口
+    port: 5672
+    # 用户名
+    username: chuck
+    # 密码
+    password: 123456
+    # 虚拟主机
+    virtual-host: test_host
+    template:
+      retry:
+        # 生产 重试机制 true 开启
+        enabled: true
+        # 重试次数 5
+        max-attempts: 5
+    listener:
+      simple:
+        # 设置 确认模式为 手工模式
+        #acknowledge-mode: manual
+        #消费分配策略 1 平均
+        prefetch: 1
+        retry:
+          # 消费 重试机制 true 开启
+          enabled: true
+          # 重试次数 5
+          max-attempts: 5

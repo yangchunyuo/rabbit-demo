@@ -1,0 +1,9 @@
+com\rabbitmq\demo\boot\HelloApplication.class
+com\rabbitmq\demo\boot\Sender.class
+com\rabbitmq\demo\java\RabbitMqConnectionFactory.class
+com\rabbitmq\demo\java\Customer.class
+com\rabbitmq\demo\java\Producer.class
+com\rabbitmq\demo\java\Configuration.class
+com\rabbitmq\demo\java\Customer$1.class
+com\rabbitmq\demo\boot\Receiver.class
+com\rabbitmq\demo\boot\RabbitConfig.class
